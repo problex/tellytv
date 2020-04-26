@@ -1,0 +1,31 @@
+ [Discovery] 
+Device-Auth = "telly123" 
+Device-ID = 12345678 
+Device-UUID = ""
+Device-Firmware-Name = "hdhomeruntc_atsc"
+Device-Firmware-Version = "20150826"
+Device-Friendly-Name = "telly"
+Device-Manufacturer = "Silicondust"
+Device-Model-Number = "HDTC-2US"
+SSDP = true
+ [IPTV]
+Streams = 3
+Starting-Channel = 1
+XMLTV-Channels = true
+ ### FFMpeg is enabled ### 
+FFMpeg = true 
+ [Log]
+Level = "warn"
+Requests = false
+ [Web]
+Base-Address = "127.0.0.1:6077"
+Listen-Address = "0.0.0.0:6077"
+ [[Source]]
+Name = ""
+Provider = "Custom"
+### IPTV M3U File - Example for New Zealand Freeview ###
+M3U = "http://i.mjh.nz/nz/raw-tv.m3u8"
+  Filter = ""
+FilterKey = ""
+FilterRaw = false
+Sort = ""
