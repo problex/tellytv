@@ -1,0 +1,11 @@
+version: "3.2"
+services:
+    telly:
+      image: tellytv/telly:dev-ffmpeg
+      ports:
+        - "6077:6077"
+      environment:
+        - TZ=NewZealand/Auckland
+      volumes:
+        - /mnt/docker/tellytv/telly.config.toml:/etc/telly/telly.config.toml
+      restart: unless-stopped
